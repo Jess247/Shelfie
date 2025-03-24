@@ -21,7 +21,7 @@ export default function Header() {
     },[])
 
     return(
-        <header>
+        <header className='pb-4'>
             {windowSize < 800 ? 
             <NavMobile navItems={navItems}/> :
             <NavDesktop navItems={navItems}/>}
