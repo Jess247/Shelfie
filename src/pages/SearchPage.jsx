@@ -1,5 +1,10 @@
+import { Outlet } from "react-router";
+
 export default function SearchPage() {
     return (
-        <h1>Search page</h1>
+        <>
+            <Outlet/>
+            <h1>Search page</h1>
+        </>
     )
 }

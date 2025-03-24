@@ -1,5 +1,10 @@
+import { Outlet } from "react-router";
+
 export default function TbrPage() {
     return (
-        <h1>TBR page</h1>
+        <>
+            <Outlet/>
+            <h1>TBR page</h1>
+        </>
     )
 }

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router'
 
 function App() {
   
@@ -28,7 +28,7 @@ function App() {
   
   return (
    <>
-   <Header/>
+   <Outlet/>
    <Hero/>
    </>
   )
