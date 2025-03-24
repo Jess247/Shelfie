@@ -4,7 +4,28 @@ import { useEffect, useState } from 'react'
 
 export default function Header() {
 
-    const navItems = ['Home', 'Search', 'Want to read', 'read', 'Login']
+    const navItems = [
+        {  
+            name:'Home',
+            path:'/'
+        },
+        {  
+            name:'Search',
+            path:'/search'
+        },
+        {  
+            name:'Want to Read',
+            path:'/tbr'
+        },
+        {  
+            name:'Read',
+            path:'/read'
+        },
+        {  
+            name:'Login',
+            path:'/login'
+        },
+    ]
 
     const [windowSize, setWindowSize] = useState(window.innerWidth) 
 

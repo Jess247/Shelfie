@@ -7,6 +7,7 @@ export default function NavMobile({navItems}) {
     
     const [isToggled, setIsToggled] = useState(false)
     
+    
     const handleClick = () => {
         setIsToggled(!isToggled)
     }
@@ -25,7 +26,7 @@ export default function NavMobile({navItems}) {
                 className="hover:text-[#D90368]"
             /> }
             {isToggled && <div className="flex flex-col justify-center items-center gap-4">
-                {navItems.map(item => <Link className={`hover:underline underline-offset-8 hover:text-[#D90368]`} to="/">{item}</Link>)}
+                {navItems.map(item => <Link className={`hover:underline underline-offset-8 hover:text-[#D90368]`} to={`${item.path}`}>{item.name}</Link>)}
             </div>}
         </nav>
     )
