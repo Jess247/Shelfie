@@ -22,14 +22,14 @@ export default function CarouselComponent({books}) {
         }
       }
  
-      console.log(books)
+      console.log(books[0].author_name[0])
     return(
-        <Carousel responsive={responsive}>
-            <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-            <div>Item 4</div>
-            <div>Item 5</div>
+        <Carousel responsive={responsive} className="text-center my-8">
+            <div>{books[0].author_name[0]}</div>
+            <div>{books[1].author_name[0]}</div>
+            <div>{books[2].author_name[0]}</div>
+            <div>{books[3].author_name[0]}</div>
+            <div>{books[4].author_name[0]}</div>
         </Carousel>
     )
 }
