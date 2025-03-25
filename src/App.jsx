@@ -17,6 +17,7 @@ function App() {
     }
     return booksObj
   }
+  const newBooks = topFive()
 
   console.log(books)
   useEffect( () => {
@@ -39,7 +40,7 @@ function App() {
    <>
    <Outlet/>
    <Hero/>
-   <Carousel books={topFive}/>
+   <Carousel books={newBooks}/>
    </>
   )
 }

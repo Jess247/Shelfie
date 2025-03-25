@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 
-export default function CarouselComponent() {
+export default function CarouselComponent({books}) {
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -21,7 +21,8 @@ export default function CarouselComponent() {
           items: 1
         }
       }
-
+ 
+      console.log(books)
     return(
         <Carousel responsive={responsive}>
             <div>Item 1</div>
